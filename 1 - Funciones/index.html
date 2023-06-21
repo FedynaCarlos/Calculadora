@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Funciones</title>
+</head>
+<body>
+    <script>
+        function sumar(){
+            resultado = 2 + 3;
+            return resultado;
+        }
+        let numero = "el numero es " + sumar();
+        alert(numero);
+
+        function mostrarFecha() {
+    alert(obtenerFecha());
+};
+
+function obtenerFecha() {
+    let fecha = new Date();
+    return fecha.toLocaleDateString('es-ES');
+};
+// 
+
+    </script>
+</body>
+</html>

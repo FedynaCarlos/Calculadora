@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Random</title>
+</head>
+<body>
+    <button onclick="crearAleatorio(0, 10)">Dame un aleatorio</button>
+<h2>Numero aleatorio: <span id="textoAleatorio">---</span></h2>
+<script>
+    let elementoAleatorio = document.getElementById("textoAleatorio");
+    function crearAleatorio(minimo, maximo){
+        maximo = maximo + 1;
+        resultado = Math.random();
+    elementoAleatorio.textContent = resultado;
+}
+</script>
+<!--Los elementos RANDOM son pseudo-aleatorios-->
+<!--
+    function crearAleatorio(minimo, maximo){
+        maximo = maximo + 1;
+        resultado = Math.floor(Math.random() * (maximo - minimo) + minimo);
+    elementoAleatorio.textContent = resultado;-->
+</body>
+</html>

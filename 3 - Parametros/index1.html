@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head><title>Copia de Parametros</title></head>
+<body>
+    <p>Primer número</p>
+    <input type="number" id="primerNumero">
+    <p>Segundo número número</p>
+    <input type="number" id="segundoNumero">
+    <button onclick="mostrarResultado()">Calcular</button>
+    <h1 id="textoResultado"></h1>
+    <script>
+        function sumar(num1, num2){
+            resultado = + num1 + num2;
+            return resultado;
+        }
+        function mostrarResultado(){
+            let elementoNum1 = document.getElementById("primerNumero");
+            let elementoNum2 = document.getElementById("segundoNumero");
+            let elementoTexto = document.getElementById("textoResultado");
+            let elementoSuma = sumar(elementoNum1.value, elementoNum2.value);
+            elementoTexto.textContent = elementoSuma;
+        }
+
+
+    </script>
+</body>
+</html>
